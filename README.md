@@ -1,10 +1,14 @@
 ## AI React Code Chat
 
+<img width="250" height="150" alt="Google_Gemini_logo svg" src="https://github.com/user-attachments/assets/1c2d1ced-baea-41b0-8263-63e5cb6d0c83" /> 
+
 An AI‑powered code assistant for your React projects. Ask natural‑language questions about your own codebase; the app retrieves the most relevant code snippets (RAG) and lets Gemini answer with your context.
 
 - Frontend: React + Vite (Tailwind utility classes used in UI)
 - Backend: Node.js (Express) + Gemini (Google AI) for embeddings and generation
 - Ingestion: one‑time script that embeds your React source into `embeddings.json`
+
+<img style="width:100%; height:auto" alt="localhost_5173_" src="https://github.com/user-attachments/assets/7d74275c-e05f-4498-94e2-8776d49e8e77" />
 
 ### Why this project
 
