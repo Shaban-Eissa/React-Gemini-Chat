@@ -1,0 +1,44 @@
+/* Chat bubble tails */
+.bubble-user::after {
+  content: "";
+  position: absolute;
+  right: -6px;
+  top: 12px;
+  border-width: 6px 0 6px 6px;
+  border-style: solid;
+  border-color: transparent transparent transparent rgb(219 234 254);
+}
+.bubble-assistant::before {
+  content: "";
+  position: absolute;
+  left: -6px;
+  top: 12px;
+  border-width: 6px 6px 6px 0;
+  border-style: solid;
+  border-color: transparent rgb(220 252 231) transparent transparent;
+}
+
+/* Contain long content and code blocks inside bubbles */
+.message-content {
+  overflow: hidden;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+.message-content
+  :where(p, ul, ol, pre, code, blockquote, h1, h2, h3, h4, h5, h6) {
+  max-width: 100%;
+}
+.message-content pre {
+  overflow: auto;
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+  background-color: rgb(17 24 39 / 0.7);
+  color: #e5e7eb;
+  white-space: pre;
+}
+.message-content code:not(pre code) {
+  background-color: rgba(31, 41, 55, 0.08);
+  padding: 0.1rem 0.35rem;
+  border-radius: 0.375rem;
+}
